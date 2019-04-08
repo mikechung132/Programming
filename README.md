@@ -1,2 +1,2 @@
 # Programming
-Showcases Developmental Skills &amp; Projects
+Showcasing Developmental Skills &amp; Projects
