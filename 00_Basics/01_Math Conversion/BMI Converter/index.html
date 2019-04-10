@@ -1,0 +1,77 @@
+<!--
+    BMI Conversion
+    Created by Mike Chung
+    Date: 6/20/2018
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-euiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- BOOTSTRAP 4 PLUGGIN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    
+    <!-- IMPORTED CSS FILE -->
+    <link href="css/bmi.css" rel="stylesheet" type="text/css">
+    
+    <title>BMI Converter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1 class="display-4 text-center mb-3">Body Mass Index</h1>
+                
+                <!-- USER INPUT -->
+                <form>
+                    <div class="form-group">
+                        Your Height:
+                        <input 
+                        id="hInput"
+                        type="number" 
+                        class="form-control text-center mb-3" 
+                        placeholder="Enter height (Inches)">
+                       
+                        Your Weight:
+                        <input 
+                        id="wInput"
+                        type="number" 
+                        class="form-control text-center" 
+                        placeholder="Enter weight (lbs)">
+                    </div>
+                </form>
+                
+                <!-- BUTTON FOR CALCULATING BMI -->
+                <button 
+                   type="button" 
+                   class="btn btn-info offset-md-4 mb-2 mr" onclick="bmi()">Check BMI</button>
+                   
+                <!-- BUTTON FOR RELOADING PAGE -->   
+                <button 
+                   type="button" 
+                   class="btn btn-outline-dark mb-2 pl-3 pr-3"
+                   onclick="startOver()">Reset</button>
+                   
+                <!-- OUTPUTS RESULTS -->
+                <div id="output">
+                    <div class="bg col-sm-4 offset-4">
+                        <div id="status" class="text-center m-2">
+                        <!-- OUTPUT DISPLAYS HERE -->
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>  
+    
+    <!-- IMPORTED JS FILE -->
+    <script type="text/javascript" src="js/bmi.js"></script>
+    
+</body>
+</html>

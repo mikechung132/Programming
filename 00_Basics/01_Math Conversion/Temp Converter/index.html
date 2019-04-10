@@ -1,0 +1,95 @@
+<!--
+    Temperature Converter
+    Created by Mike Chung
+    Date: 6/19/2018
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- BOOTSTRAP 4 PLUGGIN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    
+    <!-- IMPORTED CSS FILE -->
+    <link href="css/tc.css" rel="stylesheet" type="text/css">
+    
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1 class="text-center display-3 mb-4">Temperature Converter</h1>
+              
+                <!-- TEMPERATURE UNITS DROPDOWN MENU -->
+                <div class="mb-3 offset-sm-5">
+                    <select id="selection">
+                      <option value="SelectOne">Select One
+                      <option value="1">Fahrenheit
+                      <option value="2">Celsius
+                      <option value="3">Kelvin
+                    </select>
+                </div>
+                
+                <!-- USER INPUT FOR TEMPERATURE -->
+                <form>
+                    <div class="form-group">
+                        <input
+                        id="tempInput"
+                        type="number"
+                        class="form-control form-control-lg"
+                        placeholder="Enter Current Temperature"
+                        >
+                    </div>
+                </form>
+                
+                <!-- CALCULATES FAHRENHEIT CONVERSION -->
+                <div id="output1">
+                    <div class="card bg-dark text-white">
+                        <div class="card-block">
+                            <h4>Fahrenheit: </h4>
+                            <div id="F">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CALCULATES CELCIUS CONVERSION -->
+               <div id="output2">
+                    <div class="card bg-dark text-white">
+                        <div class="card-block">
+                            <h4>Celsius: </h4>
+                            <div id="C">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                
+                <!-- CALCULATES KELVIN CONVERSION -->
+                <div id="output3">
+                    <div class="card bg-dark text-white">
+                        <div class="card-block">
+                            <h4>Kelvin: </h4>
+                            <div id="K">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <!-- IMPORTED JS FILE -->
+    <script type="text/javascript" src="js/tc.js"></script>
+</body>
+</html>

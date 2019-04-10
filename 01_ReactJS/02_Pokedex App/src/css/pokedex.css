@@ -1,0 +1,18 @@
+.App {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-color: #fafafa;
+  padding-top: 4rem;
+}
+
+.navbar {
+  background-color: #ef3940 !important;
+  color: white;
+  font-size: 20px;
+}
+
+body {
+  margin-right: 1.2%;
+  margin-left: .5%;
+}
