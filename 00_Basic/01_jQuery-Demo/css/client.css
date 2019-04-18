@@ -1,0 +1,92 @@
+body{
+		position: fixed;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;	
+		background-color: black;
+		color: #fff;
+	}
+	
+h1{
+		text-align:center;
+		margin-bottom: 20px;
+    	color: white;
+    	font-size: 200%;
+		font-family: "Times New Roman", Times, serif;
+		
+	}
+	
+h3{
+		text-align:center;
+		margin-bottom: 20px;
+    	color: white;
+    	font-size: 200%;
+		font-family: "Times New Roman", Times, serif;
+}
+
+legend{
+		color: white;	
+}
+
+#buttons{
+		text-align: center;
+}
+	
+myShell{ 
+ 		height: 510px;
+   		padding: 2px;
+}
+.myShell #beetle{
+   		position: absolute;
+  		top: 200px;
+ 		left: 200px;
+  		text-align: center;
+
+}
+.myShell #content{  
+		position: relative; 
+		display: inline-block; 
+		border: 2px solid #F03; 
+		background-color: #000; 
+		width: 500px; 
+		height: 500px; 
+		z-index: -1; 
+}
+
+.myShell #controls{ 
+		width: 140px; 
+		height: 600px; 
+		display: inline-block; 
+		background-color: #000;
+		border: 2px solid #F03;
+}
+
+.myShell button{ 
+		border: 1px solid #000; 
+		background-color: #F03; 
+} 
+
+.myShell button:hover{ 
+		background-color: #FC3; 
+		border: 1px solid #30C;
+}
+
+#text{
+		height: 30px;	
+}
+
+form{
+   		position: relative; 
+   		display: inline-block;  
+   		text-align: center;
+   		width: 700px;
+}
+
+fieldset{
+  		border-color: #FC3;
+   		display:inline-block;
+}
+
+
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>jQuery Demo</title>
+    <meta charset="utf-8">
+    <link href="css/client.css" rel="stylesheet" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>jQuery Demo</h1>
+    <div class="myShell">
+    	<div id="content">
+    		<div id="beetle">
+        		<img src = "arcbeetle.png" alt="Medabot-Arcbeetle">
+        	</div>
+      	</div>
+    </div>
+
+    <div>
+    	<p id="text"></p>
+    </div>
+
+    <div id="controls">
+        <form>
+        <fieldset>
+            <legend>Actions</legend>
+            <button type="button" id="show">Show</button>
+            <button type="button" id="hide">Hide</button>
+            <button type="button" id="toggle">Toggle</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Fade</legend>
+            <button type="button" id="fadeIn">Appear</button>
+            <button type="button" id="fadeOut">Disappear</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Navigate</legend>
+            <button type="button" id="up">Up</button>
+            <button type="button" id="right">Right</button>
+            <button type="button" id="left">Left</button>
+            <button type="button" id="down">Down</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Glide</legend>
+            <button type="button" id="glide">Charge</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Nudge</legend>
+
+            <button type="button" id="nLeft">Push</button>
+            <button type="button" id="nRight">Punch</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Slide</legend>
+            <button type="button" id="slideUp">Slide Up</button>
+            <button type="button" id="slideDown">Slide Down</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Reset</legend>
+            <button type="button" id="reset">Restart</button>
+        </fieldset>
+        </form>
+    </div>
+            <audio id="punch" src="sounds/punch.mp3" preload="auto">
+            </audio>
+            <audio id="push" src="sounds/push.mp3" preload="auto">
+            </audio>
+            <audio id="walk" src="sounds/walk.mp3" preload="auto">
+            </audio>
+            <audio id="dash" src="sounds/dash.mp3" preload="auto">
+            </audio>
+            <audio id="fade" src="sounds/fade.mp3" preload="auto">
+            </audio>
+            <audio id="slide" src="sounds/slide.mp3" preload="auto">
+            </audio>
+             <audio id="teleport" src="sounds/teleport.mp3" preload="auto">
+            </audio>
+  <script type="text/javascript" src="js/client.js"></script>
+</body>
+</html>
